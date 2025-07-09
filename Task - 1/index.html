@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature & Animal Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> Nature & Animal Gallery</h1>
+<div class="filters">
+  <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+  <button class="filter-btn" onclick="filterGallery('nature', this)">Nature</button>
+  <button class="filter-btn" onclick="filterGallery('animals', this)">Animals</button>
+</div>
+  </header>
+  <div id="lightbox" onclick="closeLightbox(event)">
+  <span class="nav-btn prev" onclick="showPrev(event)">&#10094;</span>
+  <img id="lightbox-img" src="" alt="Full View" />
+  <span class="nav-btn next" onclick="showNext(event)">&#10095;</span>
+</div>
+
+  <div class="gallery" id="gallery">
+    <!-- Nature -->
+    <div class="image-card nature">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Ocean Sunset" onclick="openLightbox(this)" />
+    </div>
+    <div class="image-card nature">
+      <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=800&q=80" alt="Mountain Range" onclick="openLightbox(this)" />
+    </div>
+    <div class="image-card nature">
+      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Misty Forest" onclick="openLightbox(this)" />
+    </div>
+    <div class="image-card nature">
+      <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=800&q=80" alt="Icy Lake" onclick="openLightbox(this)" />
+    </div>
+    <div class="image-card nature">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Sunset Hills" onclick="openLightbox(this)" />
+    </div>
+    <div class="image-card nature">
+      <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=800&q=80" alt="Misty Mountains" onclick="openLightbox(this)" />
+    </div>
+
+    <!-- Animals -->
+<div class="image-card animals">
+  <img src="https://images.unsplash.com/photo-1610620299042-4a7880ccb5b6?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Baby Elephant" onclick="openLightbox(this)" />
+</div>
+<div class="image-card animals">
+  <img src="https://plus.unsplash.com/premium_photo-1664298390980-db072565cf61?q=80&w=1205&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Fox" onclick="openLightbox(this)" />
+</div>
+<div class="image-card animals">
+  <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?auto=format&fit=crop&w=800&q=80" alt="Elephant" onclick="openLightbox(this)" />
+</div>
+<div class="image-card animals">
+  <img src="https://images.unsplash.com/photo-1599921778557-082147629542?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Giraffe" onclick="openLightbox(this)" />
+</div>
+<div class="image-card animals">
+  <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=1159&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lion Close-Up" onclick="openLightbox(this)" />
+</div>
+<div class="image-card animals">
+  <img src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Panda Eating" onclick="openLightbox(this)" />
+</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
