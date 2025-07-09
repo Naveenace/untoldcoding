@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAVEEN K | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>WELCOME TO MY PORTFOLIO</h1>
+      <h2 class="my-name"><span>NAVEEN K</span></h2>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#resume">RESUME</a></li>
+        <li><a href="#contact">CONTACT ME</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+Hi , I am  NAVEEN K 
+I build responsive & modern websites.
+    <section id="home">
+      <h2>Hello, I'm Naveen 👋</h2>
+      <p>Welcome I build responsive & modern websites and see my work.</p>
+      <a href="#about" class="btn">Explore</a>
+    </section>
+
+    <section id="about">
+      <h2>ABOUT ME</h2>
+      <div class="about-wrapper">
+        <img src="https://i.postimg.cc/NFBJ3n3W/Whats-App-Image-2025-06-26-at-14-50-05-087e3521.jpg" alt="Profile photo of Naveen K" class="profile-photo" />
+        <div class="about-text">
+          <p>
+            I’m <strong>NAVEEN K</strong>, a passionate Frontend Developer from Tamil Nadu. I enjoy crafting responsive and user-friendly websites, with a strong foundation in HTML, CSS, and JavaScript.
+          </p>
+          <p>
+            With hands-on experience, I’ve built projects like a fashion e-commerce website and this personal portfolio. I have a strong interest in clean UI and mobile-first design.
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/naveen-k-9431092a4" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/Naveenace" target="_blank">GitHub</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>PROJECTS</h2>
+      <button class="toggle-btn" onclick="toggleProjects()">Show Projects</button>
+      <ul class="project-list" id="projectList" style="display: none;">
+        <li><strong>Flappy Robot Game</strong> – A robot-themed twist on the classic Flappy Bird.</li>
+        <li><strong>Calculator App</strong> – A stylish, functional calculator with keyboard support.</li>
+        <li><strong>AutoVerse</strong> – A 3D vehicle image gallery web app with lightbox and filters.</li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>RESUME</h2>
+      <a href="WhatsApp+Image+2025-07-09+at+11.05.35_62f218ae" class="btn" download>Download My Resume</a>
+    </section>
+
+    <section id="contact">
+      <h2>CONTACT ME</h2>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Naveen K | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
